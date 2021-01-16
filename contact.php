@@ -14,7 +14,7 @@ $to ="abhi.arya509@gmail.com";
 $headers ="From: $email_from \r\n";
 $headers .="Reply-To: $email \r\n";
 mail($to,$email_subject,$email_body,$headers);
-header("Location: ..\kmnh\contact.html");
+header("Location:kmnh\contact.html");
 if(mail($to, $email_subject, $email_body, $headers)){
     echo 'Your mail has been sent successfully.';
 } else{
